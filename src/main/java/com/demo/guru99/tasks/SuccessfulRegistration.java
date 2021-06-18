@@ -16,12 +16,9 @@ public class SuccessfulRegistration implements Task {
         this.message = message;
     }
 
-
     @Override
     public <T extends Actor> void performAs(T actor) {
-
         actor.attemptsTo(Ensure.that(SuccessfulRegistrationHomePage.REGISTER_OK).text().isEqualTo(message));
-
 
     }
 

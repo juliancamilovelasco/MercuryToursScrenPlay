@@ -151,7 +151,7 @@
             <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 17-06-2021 19:54</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 17-06-2021 20:42</span>
     <br style="clear:left"/>
 </div>
 
@@ -188,9 +188,9 @@ to create a new account
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></a></span>
                             <span class="test-case-title">
-                                <span class="success-color">Create a New Account
+                                <span class="error-color">Create a New Account
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -211,102 +211,61 @@ to create a new account
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Web driver exception: The following error occurred: chrome not reachable</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>org.openqa.selenium.WebDriverException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>com.demo.guru99.tasks.CreateNewAccount.performAs(CreateNewAccount.java:23)<br />com.demo.guru99.stepdefinions.RegisterStepsDefinitions.heFillsAllBox(RegisterStepsDefinitions.java:39)<br />cucumber.runner.Runner.runPickle(Runner.java:80)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="#" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="2bffa905b69fb29bf3b16bcfeb595319c5c14aaefc75004f7a2e0e17c5b65eee.png" title=" Example: {firstName=julian, lastName=velasco, phone=12345, email=julian@gmail.com, address1=abcde12345, city=bogota, state=bogota, postalCode=1111, userName=julian, password=julian, confirmPassword=julian}" width="1295"/>
-                <img src="2bffa905b69fb29bf3b16bcfeb595319c5c14aaefc75004f7a2e0e17c5b65eee.png" title=" Given That Julian want to create a new account" width="1295"/>
-                <img src="2bffa905b69fb29bf3b16bcfeb595319c5c14aaefc75004f7a2e0e17c5b65eee.png" title=" julian opens the browser on Google Home Page" width="1295"/>
-                <img src="2bffa905b69fb29bf3b16bcfeb595319c5c14aaefc75004f7a2e0e17c5b65eee.png" title=" julian opens the Guru home page" width="1295"/>
-                <img src="2bffa905b69fb29bf3b16bcfeb595319c5c14aaefc75004f7a2e0e17c5b65eee.png" title=" julian opens the browser on Google Home Page (completed)" width="1295"/>
-                <img src="2bffa905b69fb29bf3b16bcfeb595319c5c14aaefc75004f7a2e0e17c5b65eee.png" title=" Julian click register link" width="1295"/>
-                <img src="2bffa905b69fb29bf3b16bcfeb595319c5c14aaefc75004f7a2e0e17c5b65eee.png" title=" julian clicks on Link Register" width="1295"/>
-                <img src="26ec42f7503c8901e19fb90ebf5fee2c61abf4dfc88e1b592004dd89d11f8211.png" title=" julian clicks on Link Register (completed)" width="1034"/>
-                <img src="26ec42f7503c8901e19fb90ebf5fee2c61abf4dfc88e1b592004dd89d11f8211.png" title=" Julian click register link (completed)" width="1034"/>
-                <img src="26ec42f7503c8901e19fb90ebf5fee2c61abf4dfc88e1b592004dd89d11f8211.png" title=" Given That Julian want to create a new account (completed)" width="1034"/>
-                <img src="26ec42f7503c8901e19fb90ebf5fee2c61abf4dfc88e1b592004dd89d11f8211.png" title=" When He Fills all box
-| firstName | lastName | phone | email | address1 | city | state | postalCode | userName | password | confirmPassword |
-| julian | velasco | 12345 | julian@gmail.com | abcde12345 | bogota | bogota | 1111 | julian | julian | julian |" width="1034"/>
-                <img src="26ec42f7503c8901e19fb90ebf5fee2c61abf4dfc88e1b592004dd89d11f8211.png" title=" julian enters 'julian' into Box firstName" width="1034"/>
-                <img src="be8b6fe24478296e1bebefd77a2fbc4b5784ab8ee1eee70e1ec46ef432a08913.png" title=" julian enters 'julian' into Box firstName (completed)" width="1034"/>
-                <img src="be8b6fe24478296e1bebefd77a2fbc4b5784ab8ee1eee70e1ec46ef432a08913.png" title=" julian enters 'velasco' into Box lastName" width="1034"/>
-                <img src="a2d870b3f33db01dd31a38d22bc381fc0363e6f08a44f0ff5c442224f6232630.png" title=" julian enters 'velasco' into Box lastName (completed)" width="1034"/>
-                <img src="a2d870b3f33db01dd31a38d22bc381fc0363e6f08a44f0ff5c442224f6232630.png" title=" julian enters '12345' into Box phone" width="1034"/>
-                <img src="66b6cc8d41d11ef7cdee6e4efc31a26c4e29f7911a5142befa2b37548196a190.png" title=" julian enters '12345' into Box phone (completed)" width="1034"/>
-                <img src="66b6cc8d41d11ef7cdee6e4efc31a26c4e29f7911a5142befa2b37548196a190.png" title=" julian enters 'julian@gmail.com' into Box email" width="1034"/>
-                <img src="e3aa8c1edc31ec59ee963351ebbbe9d4cf8160c42db83525a8726332fa9980d0.png" title=" julian enters 'julian@gmail.com' into Box email (completed)" width="1034"/>
-                <img src="e3aa8c1edc31ec59ee963351ebbbe9d4cf8160c42db83525a8726332fa9980d0.png" title=" julian enters 'abcde12345' into Box address1" width="1034"/>
-                <img src="46f1ba3c306f05ffbdbabd133e262307f8baf94c8a9f22d43ef9db0bbdb348be.png" title=" julian enters 'abcde12345' into Box address1 (completed)" width="1034"/>
-                <img src="46f1ba3c306f05ffbdbabd133e262307f8baf94c8a9f22d43ef9db0bbdb348be.png" title=" julian enters 'bogota' into Box city" width="1034"/>
-                <img src="11c92a75a28c6b35f56e7f1f9b129bf71de8af849e8d0b0437c52e95be17b002.png" title=" julian enters 'bogota' into Box city (completed)" width="1034"/>
-                <img src="11c92a75a28c6b35f56e7f1f9b129bf71de8af849e8d0b0437c52e95be17b002.png" title=" julian enters 'bogota' into Box state" width="1034"/>
-                <img src="174eb069fe56f889e31c1d599dffb4c1a4e67060f92b6b90529ed33fc61a6737.png" title=" julian enters 'bogota' into Box state (completed)" width="1034"/>
-                <img src="174eb069fe56f889e31c1d599dffb4c1a4e67060f92b6b90529ed33fc61a6737.png" title=" julian enters '1111' into Box postalCode" width="1034"/>
-                <img src="2ef8ca7331ab4985c0bf0dbf760b8ac18bde9e027e26670aead27531b3cc2a46.png" title=" julian enters '1111' into Box postalCode (completed)" width="1034"/>
-                <img src="2ef8ca7331ab4985c0bf0dbf760b8ac18bde9e027e26670aead27531b3cc2a46.png" title=" julian enters 'julian' into Box postalCode" width="1034"/>
-                <img src="44b9065eb443558c3cbc7b62da626c2ae8ff1c33ed848d0ba78475c8ef87523c.png" title=" julian enters 'julian' into Box postalCode (completed)" width="1034"/>
-                <img src="44b9065eb443558c3cbc7b62da626c2ae8ff1c33ed848d0ba78475c8ef87523c.png" title=" julian enters 'julian' into Box password" width="1034"/>
-                <img src="4a5f73dadbe959d2ecc71a94669ad4652f1fae7df3cfa4dc22d97d9c72418ceb.png" title=" julian enters 'julian' into Box password (completed)" width="1034"/>
-                <img src="4a5f73dadbe959d2ecc71a94669ad4652f1fae7df3cfa4dc22d97d9c72418ceb.png" title=" julian enters 'julian' into Box confirmPassword" width="1034"/>
-                <img src="3f03f63a7824ef93e1c33bc58a5e53c6a46ea4cccf69f11f06dac15c4911fe66.png" title=" julian enters 'julian' into Box confirmPassword (completed)" width="1034"/>
-                <img src="3f03f63a7824ef93e1c33bc58a5e53c6a46ea4cccf69f11f06dac15c4911fe66.png" title=" Julian click button submit" width="1034"/>
-                <img src="3f03f63a7824ef93e1c33bc58a5e53c6a46ea4cccf69f11f06dac15c4911fe66.png" title=" julian clicks on Button Submit" width="1034"/>
-                <img src="3202ffd031d6cb5b1a6e5af54f3214299055e94a4584c97431276e0cfffe5ade.png" title=" julian clicks on Button Submit (completed)" width="1034"/>
-                <img src="3202ffd031d6cb5b1a6e5af54f3214299055e94a4584c97431276e0cfffe5ade.png" title=" Julian click button submit (completed)" width="1034"/>
-                <img src="3202ffd031d6cb5b1a6e5af54f3214299055e94a4584c97431276e0cfffe5ade.png" title=" When He Fills all box
-| firstName | lastName | phone | email | address1 | city | state | postalCode | userName | password | confirmPassword |
-| julian | velasco | 12345 | julian@gmail.com | abcde12345 | bogota | bogota | 1111 | julian | julian | julian | (completed)" width="1034"/>
-                <img src="3202ffd031d6cb5b1a6e5af54f3214299055e94a4584c97431276e0cfffe5ade.png" title=" Then He should see sign-in" width="1034"/>
-                <img src="3202ffd031d6cb5b1a6e5af54f3214299055e94a4584c97431276e0cfffe5ade.png" title=" Julian successful registration" width="1034"/>
-                <img src="3202ffd031d6cb5b1a6e5af54f3214299055e94a4584c97431276e0cfffe5ade.png" title=" Julian successful registration (completed)" width="1034"/>
-                <img src="3202ffd031d6cb5b1a6e5af54f3214299055e94a4584c97431276e0cfffe5ade.png" title=" Then He should see sign-in (completed)" width="1034"/>
-                <img src="3202ffd031d6cb5b1a6e5af54f3214299055e94a4584c97431276e0cfffe5ade.png" title=" Example: {firstName=julian, lastName=velasco, phone=12345, email=julian@gmail.com, address1=abcde12345, city=bogota, state=bogota, postalCode=1111, userName=julian, password=julian, confirmPassword=julian} (completed)" width="1034"/>
-                <img src="2bffa905b69fb29bf3b16bcfeb595319c5c14aaefc75004f7a2e0e17c5b65eee.png" title=" Example: {firstName=camilo, lastName=torres, phone=9876, email=camilo@gmail.com, address1=xcv12345, city=tunja, state=bogota, postalCode=2222, userName=camilo, password=camilo, confirmPassword=camilo}" width="1295"/>
-                <img src="2bffa905b69fb29bf3b16bcfeb595319c5c14aaefc75004f7a2e0e17c5b65eee.png" title=" Given That Julian want to create a new account" width="1295"/>
-                <img src="2bffa905b69fb29bf3b16bcfeb595319c5c14aaefc75004f7a2e0e17c5b65eee.png" title=" julian opens the browser on Google Home Page" width="1295"/>
-                <img src="2bffa905b69fb29bf3b16bcfeb595319c5c14aaefc75004f7a2e0e17c5b65eee.png" title=" julian opens the Guru home page" width="1295"/>
-                <img src="2bffa905b69fb29bf3b16bcfeb595319c5c14aaefc75004f7a2e0e17c5b65eee.png" title=" julian opens the browser on Google Home Page (completed)" width="1295"/>
-                <img src="2bffa905b69fb29bf3b16bcfeb595319c5c14aaefc75004f7a2e0e17c5b65eee.png" title=" Julian click register link" width="1295"/>
-                <img src="2bffa905b69fb29bf3b16bcfeb595319c5c14aaefc75004f7a2e0e17c5b65eee.png" title=" julian clicks on Link Register" width="1295"/>
-                <img src="4286d1e6e087cfff8fa7b8c8c502779cbe547253a5618074afb43e7c73504d79.png" title=" julian clicks on Link Register (completed)" width="1295"/>
-                <img src="4286d1e6e087cfff8fa7b8c8c502779cbe547253a5618074afb43e7c73504d79.png" title=" Julian click register link (completed)" width="1295"/>
-                <img src="4286d1e6e087cfff8fa7b8c8c502779cbe547253a5618074afb43e7c73504d79.png" title=" Given That Julian want to create a new account (completed)" width="1295"/>
-                <img src="4286d1e6e087cfff8fa7b8c8c502779cbe547253a5618074afb43e7c73504d79.png" title=" When He Fills all box
-| firstName | lastName | phone | email | address1 | city | state | postalCode | userName | password | confirmPassword |
-| camilo | torres | 9876 | camilo@gmail.com | xcv12345 | tunja | bogota | 2222 | camilo | camilo | camilo |" width="1295"/>
-                <img src="4286d1e6e087cfff8fa7b8c8c502779cbe547253a5618074afb43e7c73504d79.png" title=" julian enters 'camilo' into Box firstName" width="1295"/>
-                <img src="67a01acd19c205aa77d6c9c6be6e25db59f09a4e8359d9ca5c0d1ad1763363d3.png" title=" julian enters 'camilo' into Box firstName (completed)" width="1034"/>
-                <img src="67a01acd19c205aa77d6c9c6be6e25db59f09a4e8359d9ca5c0d1ad1763363d3.png" title=" julian enters 'torres' into Box lastName" width="1034"/>
-                <img src="50a36af4e0e73a71d65754eeb00a68f14254e7858ea191d79524becc9b09695e.png" title=" julian enters 'torres' into Box lastName (completed)" width="1034"/>
-                <img src="50a36af4e0e73a71d65754eeb00a68f14254e7858ea191d79524becc9b09695e.png" title=" julian enters '9876' into Box phone" width="1034"/>
-                <img src="86a2ff926ff2dc39185566cc82d733224fe5ebe8e7a07f61fd2de13e31278b2c.png" title=" julian enters '9876' into Box phone (completed)" width="1034"/>
-                <img src="86a2ff926ff2dc39185566cc82d733224fe5ebe8e7a07f61fd2de13e31278b2c.png" title=" julian enters 'camilo@gmail.com' into Box email" width="1034"/>
-                <img src="69c126465154c7700b55be71f0343ab40b4f3cb800d549e4ac0cc40dae7bb787.png" title=" julian enters 'camilo@gmail.com' into Box email (completed)" width="1034"/>
-                <img src="69c126465154c7700b55be71f0343ab40b4f3cb800d549e4ac0cc40dae7bb787.png" title=" julian enters 'xcv12345' into Box address1" width="1034"/>
-                <img src="0ab4b8be78f8177daa2c141f3e0babacbc7214e2f20fec5db9a4a8aaccf35bcb.png" title=" julian enters 'xcv12345' into Box address1 (completed)" width="1034"/>
-                <img src="0ab4b8be78f8177daa2c141f3e0babacbc7214e2f20fec5db9a4a8aaccf35bcb.png" title=" julian enters 'tunja' into Box city" width="1034"/>
-                <img src="114496bc8e57eb78302e7f44ea581fb3a06265ebdfdefff08130e7ecea979d40.png" title=" julian enters 'tunja' into Box city (completed)" width="1034"/>
-                <img src="114496bc8e57eb78302e7f44ea581fb3a06265ebdfdefff08130e7ecea979d40.png" title=" julian enters 'bogota' into Box state" width="1034"/>
-                <img src="cd8e09ed972d07f35d85fb6fef8fc2b8b7e5fa2c12a3197ad0e353a6013df49b.png" title=" julian enters 'bogota' into Box state (completed)" width="1034"/>
-                <img src="cd8e09ed972d07f35d85fb6fef8fc2b8b7e5fa2c12a3197ad0e353a6013df49b.png" title=" julian enters '2222' into Box postalCode" width="1034"/>
-                <img src="674f7bb5d851f1ef8207bb398e70e08952457c979dbd00cb4e0be279316c1aef.png" title=" julian enters '2222' into Box postalCode (completed)" width="1034"/>
-                <img src="674f7bb5d851f1ef8207bb398e70e08952457c979dbd00cb4e0be279316c1aef.png" title=" julian enters 'camilo' into Box postalCode" width="1034"/>
-                <img src="0779ec5de3bcb1d968028aaf0177320e7c411f2d3a0939d065f0294516cfbea3.png" title=" julian enters 'camilo' into Box postalCode (completed)" width="1034"/>
-                <img src="0779ec5de3bcb1d968028aaf0177320e7c411f2d3a0939d065f0294516cfbea3.png" title=" julian enters 'camilo' into Box password" width="1034"/>
-                <img src="67849ce4b65113e7a0f2ca700f41900356f87c4ad2133347456bcfca0700883e.png" title=" julian enters 'camilo' into Box password (completed)" width="1034"/>
-                <img src="67849ce4b65113e7a0f2ca700f41900356f87c4ad2133347456bcfca0700883e.png" title=" julian enters 'camilo' into Box confirmPassword" width="1034"/>
-                <img src="089fb5bad29212121486df98fbf451121609c2b5b13eeb5918341bf60754d4cc.png" title=" julian enters 'camilo' into Box confirmPassword (completed)" width="1034"/>
-                <img src="089fb5bad29212121486df98fbf451121609c2b5b13eeb5918341bf60754d4cc.png" title=" Julian click button submit" width="1034"/>
-                <img src="089fb5bad29212121486df98fbf451121609c2b5b13eeb5918341bf60754d4cc.png" title=" julian clicks on Button Submit" width="1034"/>
-                <img src="2441c2c16e71b3d23174de8883fc687730daec7f9521b375841770b4d4dd38cd.png" title=" julian clicks on Button Submit (completed)" width="1034"/>
-                <img src="2441c2c16e71b3d23174de8883fc687730daec7f9521b375841770b4d4dd38cd.png" title=" Julian click button submit (completed)" width="1034"/>
-                <img src="2441c2c16e71b3d23174de8883fc687730daec7f9521b375841770b4d4dd38cd.png" title=" When He Fills all box
-| firstName | lastName | phone | email | address1 | city | state | postalCode | userName | password | confirmPassword |
-| camilo | torres | 9876 | camilo@gmail.com | xcv12345 | tunja | bogota | 2222 | camilo | camilo | camilo | (completed)" width="1034"/>
-                <img src="2441c2c16e71b3d23174de8883fc687730daec7f9521b375841770b4d4dd38cd.png" title=" Then He should see sign-in" width="1034"/>
-                <img src="2441c2c16e71b3d23174de8883fc687730daec7f9521b375841770b4d4dd38cd.png" title=" Julian successful registration" width="1034"/>
-                <img src="2441c2c16e71b3d23174de8883fc687730daec7f9521b375841770b4d4dd38cd.png" title=" Julian successful registration (completed)" width="1034"/>
-                <img src="2441c2c16e71b3d23174de8883fc687730daec7f9521b375841770b4d4dd38cd.png" title=" Then He should see sign-in (completed)" width="1034"/>
-                <img src="2441c2c16e71b3d23174de8883fc687730daec7f9521b375841770b4d4dd38cd.png" title=" Example: {firstName=camilo, lastName=torres, phone=9876, email=camilo@gmail.com, address1=xcv12345, city=tunja, state=bogota, postalCode=2222, userName=camilo, password=camilo, confirmPassword=camilo} (completed): <span class='success-color'>SUCCESS</span>" width="1034"/>
+                <img src="572ad2afb9749d69745b87340fb9ba639ba926c14a4e10c7ad8e0c3314ec8397.png" title=" Example: {firstName=julian, lastName=velasco, phone=12345, email=julian@gmail.com, address1=abcde12345, city=bogota, state=bogota, postalCode=1111, userName=julian, password=julian, confirmPassword=julian}" width="1034"/>
+                <img src="572ad2afb9749d69745b87340fb9ba639ba926c14a4e10c7ad8e0c3314ec8397.png" title=" Given That Julian want to create a new account" width="1034"/>
+                <img src="572ad2afb9749d69745b87340fb9ba639ba926c14a4e10c7ad8e0c3314ec8397.png" title=" julian opens the browser on Google Home Page" width="1034"/>
+                <img src="572ad2afb9749d69745b87340fb9ba639ba926c14a4e10c7ad8e0c3314ec8397.png" title=" julian opens the Guru home page" width="1034"/>
+                <img src="9e6950537f99c76dffe7d18495a1e5ddc99b368a1890d88e98093a5be688dd41.png" title=" julian opens the browser on Google Home Page (completed)" width="1920"/>
+                <img src="9e6950537f99c76dffe7d18495a1e5ddc99b368a1890d88e98093a5be688dd41.png" title=" Julian click register link" width="1920"/>
+                <img src="9e6950537f99c76dffe7d18495a1e5ddc99b368a1890d88e98093a5be688dd41.png" title=" julian clicks on Link Register" width="1920"/>
+                <img src="3cd96fec4fc0d7ed2f01c0fb698ddedaa62d780494e300f7a0fcdec571708876.png" title=" Example: {firstName=camilo, lastName=torres, phone=9876, email=camilo@gmail.com, address1=xcv12345, city=tunja, state=bogota, postalCode=2222, userName=camilo, password=camilo, confirmPassword=camilo}" width="1295"/>
+                <img src="3cd96fec4fc0d7ed2f01c0fb698ddedaa62d780494e300f7a0fcdec571708876.png" title=" Given That Julian want to create a new account" width="1295"/>
+                <img src="3cd96fec4fc0d7ed2f01c0fb698ddedaa62d780494e300f7a0fcdec571708876.png" title=" julian opens the browser on Google Home Page" width="1295"/>
+                <img src="3cd96fec4fc0d7ed2f01c0fb698ddedaa62d780494e300f7a0fcdec571708876.png" title=" julian opens the Guru home page" width="1295"/>
+                <img src="3cd96fec4fc0d7ed2f01c0fb698ddedaa62d780494e300f7a0fcdec571708876.png" title=" julian opens the browser on Google Home Page (completed)" width="1295"/>
+                <img src="3cd96fec4fc0d7ed2f01c0fb698ddedaa62d780494e300f7a0fcdec571708876.png" title=" Julian click register link" width="1295"/>
+                <img src="2bffa905b69fb29bf3b16bcfeb595319c5c14aaefc75004f7a2e0e17c5b65eee.png" title=" julian clicks on Link Register: <span class='error-color'>ERROR</span>" width="1295"/>
             </div>
         </div>
 
