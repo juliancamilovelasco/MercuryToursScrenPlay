@@ -1,0 +1,321 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.10.19/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle"></span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="92342d270a210f108e83d6231552a39512db16f177e0a50f3d703cf88a7a3677.html">Make A Register</a></span>
+                > <span class="truncate-60"><a
+                    href="f8254888161036aff777ed7726b3a19119b4cd881c03deb02fae55810fce967b.html">Create a New Account </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 17-06-2021 19:54</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Make A Register</span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                As a web user
+I want to Register in MercuryTours.com
+to create a new account
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Create a New Account
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Given That Julian want to create a new account<br>When He Fills all box<br><table class='embedded'><thead><th>firstName</th><th>lastName</th><th>phone</th><th>email</th><th>address1</th><th>city</th><th>state</th><th>postalCode</th><th>userName</th><th>password</th><th>confirmPassword</th></thead><tbody><tr><td>&lt;firstName&gt;</td><td>&lt;lastName&gt;</td><td>&lt;phone&gt;</td><td>&lt;email&gt;</td><td>&lt;address1&gt;</td><td>&lt;city&gt;</td><td>&lt;state&gt;</td><td>&lt;postalCode&gt;</td><td>&lt;userName&gt;</td><td>&lt;password&gt;</td><td>&lt;confirmPassword&gt;</td></tr></tbody></table><br>Then He should see sign-in</div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="2bffa905b69fb29bf3b16bcfeb595319c5c14aaefc75004f7a2e0e17c5b65eee.png" title=" Example: {firstName=julian, lastName=velasco, phone=12345, email=julian@gmail.com, address1=abcde12345, city=bogota, state=bogota, postalCode=1111, userName=julian, password=julian, confirmPassword=julian}" width="1295"/>
+                <img src="2bffa905b69fb29bf3b16bcfeb595319c5c14aaefc75004f7a2e0e17c5b65eee.png" title=" Given That Julian want to create a new account" width="1295"/>
+                <img src="2bffa905b69fb29bf3b16bcfeb595319c5c14aaefc75004f7a2e0e17c5b65eee.png" title=" julian opens the browser on Google Home Page" width="1295"/>
+                <img src="2bffa905b69fb29bf3b16bcfeb595319c5c14aaefc75004f7a2e0e17c5b65eee.png" title=" julian opens the Guru home page" width="1295"/>
+                <img src="2bffa905b69fb29bf3b16bcfeb595319c5c14aaefc75004f7a2e0e17c5b65eee.png" title=" julian opens the browser on Google Home Page (completed)" width="1295"/>
+                <img src="2bffa905b69fb29bf3b16bcfeb595319c5c14aaefc75004f7a2e0e17c5b65eee.png" title=" Julian click register link" width="1295"/>
+                <img src="2bffa905b69fb29bf3b16bcfeb595319c5c14aaefc75004f7a2e0e17c5b65eee.png" title=" julian clicks on Link Register" width="1295"/>
+                <img src="26ec42f7503c8901e19fb90ebf5fee2c61abf4dfc88e1b592004dd89d11f8211.png" title=" julian clicks on Link Register (completed)" width="1034"/>
+                <img src="26ec42f7503c8901e19fb90ebf5fee2c61abf4dfc88e1b592004dd89d11f8211.png" title=" Julian click register link (completed)" width="1034"/>
+                <img src="26ec42f7503c8901e19fb90ebf5fee2c61abf4dfc88e1b592004dd89d11f8211.png" title=" Given That Julian want to create a new account (completed)" width="1034"/>
+                <img src="26ec42f7503c8901e19fb90ebf5fee2c61abf4dfc88e1b592004dd89d11f8211.png" title=" When He Fills all box
+| firstName | lastName | phone | email | address1 | city | state | postalCode | userName | password | confirmPassword |
+| julian | velasco | 12345 | julian@gmail.com | abcde12345 | bogota | bogota | 1111 | julian | julian | julian |" width="1034"/>
+                <img src="26ec42f7503c8901e19fb90ebf5fee2c61abf4dfc88e1b592004dd89d11f8211.png" title=" julian enters 'julian' into Box firstName" width="1034"/>
+                <img src="be8b6fe24478296e1bebefd77a2fbc4b5784ab8ee1eee70e1ec46ef432a08913.png" title=" julian enters 'julian' into Box firstName (completed)" width="1034"/>
+                <img src="be8b6fe24478296e1bebefd77a2fbc4b5784ab8ee1eee70e1ec46ef432a08913.png" title=" julian enters 'velasco' into Box lastName" width="1034"/>
+                <img src="a2d870b3f33db01dd31a38d22bc381fc0363e6f08a44f0ff5c442224f6232630.png" title=" julian enters 'velasco' into Box lastName (completed)" width="1034"/>
+                <img src="a2d870b3f33db01dd31a38d22bc381fc0363e6f08a44f0ff5c442224f6232630.png" title=" julian enters '12345' into Box phone" width="1034"/>
+                <img src="66b6cc8d41d11ef7cdee6e4efc31a26c4e29f7911a5142befa2b37548196a190.png" title=" julian enters '12345' into Box phone (completed)" width="1034"/>
+                <img src="66b6cc8d41d11ef7cdee6e4efc31a26c4e29f7911a5142befa2b37548196a190.png" title=" julian enters 'julian@gmail.com' into Box email" width="1034"/>
+                <img src="e3aa8c1edc31ec59ee963351ebbbe9d4cf8160c42db83525a8726332fa9980d0.png" title=" julian enters 'julian@gmail.com' into Box email (completed)" width="1034"/>
+                <img src="e3aa8c1edc31ec59ee963351ebbbe9d4cf8160c42db83525a8726332fa9980d0.png" title=" julian enters 'abcde12345' into Box address1" width="1034"/>
+                <img src="46f1ba3c306f05ffbdbabd133e262307f8baf94c8a9f22d43ef9db0bbdb348be.png" title=" julian enters 'abcde12345' into Box address1 (completed)" width="1034"/>
+                <img src="46f1ba3c306f05ffbdbabd133e262307f8baf94c8a9f22d43ef9db0bbdb348be.png" title=" julian enters 'bogota' into Box city" width="1034"/>
+                <img src="11c92a75a28c6b35f56e7f1f9b129bf71de8af849e8d0b0437c52e95be17b002.png" title=" julian enters 'bogota' into Box city (completed)" width="1034"/>
+                <img src="11c92a75a28c6b35f56e7f1f9b129bf71de8af849e8d0b0437c52e95be17b002.png" title=" julian enters 'bogota' into Box state" width="1034"/>
+                <img src="174eb069fe56f889e31c1d599dffb4c1a4e67060f92b6b90529ed33fc61a6737.png" title=" julian enters 'bogota' into Box state (completed)" width="1034"/>
+                <img src="174eb069fe56f889e31c1d599dffb4c1a4e67060f92b6b90529ed33fc61a6737.png" title=" julian enters '1111' into Box postalCode" width="1034"/>
+                <img src="2ef8ca7331ab4985c0bf0dbf760b8ac18bde9e027e26670aead27531b3cc2a46.png" title=" julian enters '1111' into Box postalCode (completed)" width="1034"/>
+                <img src="2ef8ca7331ab4985c0bf0dbf760b8ac18bde9e027e26670aead27531b3cc2a46.png" title=" julian enters 'julian' into Box postalCode" width="1034"/>
+                <img src="44b9065eb443558c3cbc7b62da626c2ae8ff1c33ed848d0ba78475c8ef87523c.png" title=" julian enters 'julian' into Box postalCode (completed)" width="1034"/>
+                <img src="44b9065eb443558c3cbc7b62da626c2ae8ff1c33ed848d0ba78475c8ef87523c.png" title=" julian enters 'julian' into Box password" width="1034"/>
+                <img src="4a5f73dadbe959d2ecc71a94669ad4652f1fae7df3cfa4dc22d97d9c72418ceb.png" title=" julian enters 'julian' into Box password (completed)" width="1034"/>
+                <img src="4a5f73dadbe959d2ecc71a94669ad4652f1fae7df3cfa4dc22d97d9c72418ceb.png" title=" julian enters 'julian' into Box confirmPassword" width="1034"/>
+                <img src="3f03f63a7824ef93e1c33bc58a5e53c6a46ea4cccf69f11f06dac15c4911fe66.png" title=" julian enters 'julian' into Box confirmPassword (completed)" width="1034"/>
+                <img src="3f03f63a7824ef93e1c33bc58a5e53c6a46ea4cccf69f11f06dac15c4911fe66.png" title=" Julian click button submit" width="1034"/>
+                <img src="3f03f63a7824ef93e1c33bc58a5e53c6a46ea4cccf69f11f06dac15c4911fe66.png" title=" julian clicks on Button Submit" width="1034"/>
+                <img src="3202ffd031d6cb5b1a6e5af54f3214299055e94a4584c97431276e0cfffe5ade.png" title=" julian clicks on Button Submit (completed)" width="1034"/>
+                <img src="3202ffd031d6cb5b1a6e5af54f3214299055e94a4584c97431276e0cfffe5ade.png" title=" Julian click button submit (completed)" width="1034"/>
+                <img src="3202ffd031d6cb5b1a6e5af54f3214299055e94a4584c97431276e0cfffe5ade.png" title=" When He Fills all box
+| firstName | lastName | phone | email | address1 | city | state | postalCode | userName | password | confirmPassword |
+| julian | velasco | 12345 | julian@gmail.com | abcde12345 | bogota | bogota | 1111 | julian | julian | julian | (completed)" width="1034"/>
+                <img src="3202ffd031d6cb5b1a6e5af54f3214299055e94a4584c97431276e0cfffe5ade.png" title=" Then He should see sign-in" width="1034"/>
+                <img src="3202ffd031d6cb5b1a6e5af54f3214299055e94a4584c97431276e0cfffe5ade.png" title=" Julian successful registration" width="1034"/>
+                <img src="3202ffd031d6cb5b1a6e5af54f3214299055e94a4584c97431276e0cfffe5ade.png" title=" Julian successful registration (completed)" width="1034"/>
+                <img src="3202ffd031d6cb5b1a6e5af54f3214299055e94a4584c97431276e0cfffe5ade.png" title=" Then He should see sign-in (completed)" width="1034"/>
+                <img src="3202ffd031d6cb5b1a6e5af54f3214299055e94a4584c97431276e0cfffe5ade.png" title=" Example: {firstName=julian, lastName=velasco, phone=12345, email=julian@gmail.com, address1=abcde12345, city=bogota, state=bogota, postalCode=1111, userName=julian, password=julian, confirmPassword=julian} (completed)" width="1034"/>
+                <img src="2bffa905b69fb29bf3b16bcfeb595319c5c14aaefc75004f7a2e0e17c5b65eee.png" title=" Example: {firstName=camilo, lastName=torres, phone=9876, email=camilo@gmail.com, address1=xcv12345, city=tunja, state=bogota, postalCode=2222, userName=camilo, password=camilo, confirmPassword=camilo}" width="1295"/>
+                <img src="2bffa905b69fb29bf3b16bcfeb595319c5c14aaefc75004f7a2e0e17c5b65eee.png" title=" Given That Julian want to create a new account" width="1295"/>
+                <img src="2bffa905b69fb29bf3b16bcfeb595319c5c14aaefc75004f7a2e0e17c5b65eee.png" title=" julian opens the browser on Google Home Page" width="1295"/>
+                <img src="2bffa905b69fb29bf3b16bcfeb595319c5c14aaefc75004f7a2e0e17c5b65eee.png" title=" julian opens the Guru home page" width="1295"/>
+                <img src="2bffa905b69fb29bf3b16bcfeb595319c5c14aaefc75004f7a2e0e17c5b65eee.png" title=" julian opens the browser on Google Home Page (completed)" width="1295"/>
+                <img src="2bffa905b69fb29bf3b16bcfeb595319c5c14aaefc75004f7a2e0e17c5b65eee.png" title=" Julian click register link" width="1295"/>
+                <img src="2bffa905b69fb29bf3b16bcfeb595319c5c14aaefc75004f7a2e0e17c5b65eee.png" title=" julian clicks on Link Register" width="1295"/>
+                <img src="4286d1e6e087cfff8fa7b8c8c502779cbe547253a5618074afb43e7c73504d79.png" title=" julian clicks on Link Register (completed)" width="1295"/>
+                <img src="4286d1e6e087cfff8fa7b8c8c502779cbe547253a5618074afb43e7c73504d79.png" title=" Julian click register link (completed)" width="1295"/>
+                <img src="4286d1e6e087cfff8fa7b8c8c502779cbe547253a5618074afb43e7c73504d79.png" title=" Given That Julian want to create a new account (completed)" width="1295"/>
+                <img src="4286d1e6e087cfff8fa7b8c8c502779cbe547253a5618074afb43e7c73504d79.png" title=" When He Fills all box
+| firstName | lastName | phone | email | address1 | city | state | postalCode | userName | password | confirmPassword |
+| camilo | torres | 9876 | camilo@gmail.com | xcv12345 | tunja | bogota | 2222 | camilo | camilo | camilo |" width="1295"/>
+                <img src="4286d1e6e087cfff8fa7b8c8c502779cbe547253a5618074afb43e7c73504d79.png" title=" julian enters 'camilo' into Box firstName" width="1295"/>
+                <img src="67a01acd19c205aa77d6c9c6be6e25db59f09a4e8359d9ca5c0d1ad1763363d3.png" title=" julian enters 'camilo' into Box firstName (completed)" width="1034"/>
+                <img src="67a01acd19c205aa77d6c9c6be6e25db59f09a4e8359d9ca5c0d1ad1763363d3.png" title=" julian enters 'torres' into Box lastName" width="1034"/>
+                <img src="50a36af4e0e73a71d65754eeb00a68f14254e7858ea191d79524becc9b09695e.png" title=" julian enters 'torres' into Box lastName (completed)" width="1034"/>
+                <img src="50a36af4e0e73a71d65754eeb00a68f14254e7858ea191d79524becc9b09695e.png" title=" julian enters '9876' into Box phone" width="1034"/>
+                <img src="86a2ff926ff2dc39185566cc82d733224fe5ebe8e7a07f61fd2de13e31278b2c.png" title=" julian enters '9876' into Box phone (completed)" width="1034"/>
+                <img src="86a2ff926ff2dc39185566cc82d733224fe5ebe8e7a07f61fd2de13e31278b2c.png" title=" julian enters 'camilo@gmail.com' into Box email" width="1034"/>
+                <img src="69c126465154c7700b55be71f0343ab40b4f3cb800d549e4ac0cc40dae7bb787.png" title=" julian enters 'camilo@gmail.com' into Box email (completed)" width="1034"/>
+                <img src="69c126465154c7700b55be71f0343ab40b4f3cb800d549e4ac0cc40dae7bb787.png" title=" julian enters 'xcv12345' into Box address1" width="1034"/>
+                <img src="0ab4b8be78f8177daa2c141f3e0babacbc7214e2f20fec5db9a4a8aaccf35bcb.png" title=" julian enters 'xcv12345' into Box address1 (completed)" width="1034"/>
+                <img src="0ab4b8be78f8177daa2c141f3e0babacbc7214e2f20fec5db9a4a8aaccf35bcb.png" title=" julian enters 'tunja' into Box city" width="1034"/>
+                <img src="114496bc8e57eb78302e7f44ea581fb3a06265ebdfdefff08130e7ecea979d40.png" title=" julian enters 'tunja' into Box city (completed)" width="1034"/>
+                <img src="114496bc8e57eb78302e7f44ea581fb3a06265ebdfdefff08130e7ecea979d40.png" title=" julian enters 'bogota' into Box state" width="1034"/>
+                <img src="cd8e09ed972d07f35d85fb6fef8fc2b8b7e5fa2c12a3197ad0e353a6013df49b.png" title=" julian enters 'bogota' into Box state (completed)" width="1034"/>
+                <img src="cd8e09ed972d07f35d85fb6fef8fc2b8b7e5fa2c12a3197ad0e353a6013df49b.png" title=" julian enters '2222' into Box postalCode" width="1034"/>
+                <img src="674f7bb5d851f1ef8207bb398e70e08952457c979dbd00cb4e0be279316c1aef.png" title=" julian enters '2222' into Box postalCode (completed)" width="1034"/>
+                <img src="674f7bb5d851f1ef8207bb398e70e08952457c979dbd00cb4e0be279316c1aef.png" title=" julian enters 'camilo' into Box postalCode" width="1034"/>
+                <img src="0779ec5de3bcb1d968028aaf0177320e7c411f2d3a0939d065f0294516cfbea3.png" title=" julian enters 'camilo' into Box postalCode (completed)" width="1034"/>
+                <img src="0779ec5de3bcb1d968028aaf0177320e7c411f2d3a0939d065f0294516cfbea3.png" title=" julian enters 'camilo' into Box password" width="1034"/>
+                <img src="67849ce4b65113e7a0f2ca700f41900356f87c4ad2133347456bcfca0700883e.png" title=" julian enters 'camilo' into Box password (completed)" width="1034"/>
+                <img src="67849ce4b65113e7a0f2ca700f41900356f87c4ad2133347456bcfca0700883e.png" title=" julian enters 'camilo' into Box confirmPassword" width="1034"/>
+                <img src="089fb5bad29212121486df98fbf451121609c2b5b13eeb5918341bf60754d4cc.png" title=" julian enters 'camilo' into Box confirmPassword (completed)" width="1034"/>
+                <img src="089fb5bad29212121486df98fbf451121609c2b5b13eeb5918341bf60754d4cc.png" title=" Julian click button submit" width="1034"/>
+                <img src="089fb5bad29212121486df98fbf451121609c2b5b13eeb5918341bf60754d4cc.png" title=" julian clicks on Button Submit" width="1034"/>
+                <img src="2441c2c16e71b3d23174de8883fc687730daec7f9521b375841770b4d4dd38cd.png" title=" julian clicks on Button Submit (completed)" width="1034"/>
+                <img src="2441c2c16e71b3d23174de8883fc687730daec7f9521b375841770b4d4dd38cd.png" title=" Julian click button submit (completed)" width="1034"/>
+                <img src="2441c2c16e71b3d23174de8883fc687730daec7f9521b375841770b4d4dd38cd.png" title=" When He Fills all box
+| firstName | lastName | phone | email | address1 | city | state | postalCode | userName | password | confirmPassword |
+| camilo | torres | 9876 | camilo@gmail.com | xcv12345 | tunja | bogota | 2222 | camilo | camilo | camilo | (completed)" width="1034"/>
+                <img src="2441c2c16e71b3d23174de8883fc687730daec7f9521b375841770b4d4dd38cd.png" title=" Then He should see sign-in" width="1034"/>
+                <img src="2441c2c16e71b3d23174de8883fc687730daec7f9521b375841770b4d4dd38cd.png" title=" Julian successful registration" width="1034"/>
+                <img src="2441c2c16e71b3d23174de8883fc687730daec7f9521b375841770b4d4dd38cd.png" title=" Julian successful registration (completed)" width="1034"/>
+                <img src="2441c2c16e71b3d23174de8883fc687730daec7f9521b375841770b4d4dd38cd.png" title=" Then He should see sign-in (completed)" width="1034"/>
+                <img src="2441c2c16e71b3d23174de8883fc687730daec7f9521b375841770b4d4dd38cd.png" title=" Example: {firstName=camilo, lastName=torres, phone=9876, email=camilo@gmail.com, address1=xcv12345, city=tunja, state=bogota, postalCode=2222, userName=camilo, password=camilo, confirmPassword=camilo} (completed): <span class='success-color'>SUCCESS</span>" width="1034"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.1.0</span>
+</div>
+</body>
+</html>

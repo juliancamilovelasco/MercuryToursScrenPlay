@@ -1,0 +1,22 @@
+com/demo/guru99/tasks/CreateNewAccount.java
+ com.demo.guru99.tasks.CreateNewAccount
+com/demo/guru99/tasks/OpenTheBrowser.java
+ com.demo.guru99.tasks.OpenTheBrowser
+com/demo/guru99/userInterfaces/LinkRegisterHomePage.java
+ com.demo.guru99.userInterfaces.LinkRegisterHomePage
+com/demo/guru99/userInterfaces/GuruHomePage.java
+ com.demo.guru99.userInterfaces.GuruHomePage
+com/demo/guru99/userInterfaces/RegisterHomePage.java
+ com.demo.guru99.userInterfaces.RegisterHomePage
+com/demo/guru99/userInterfaces/ButtonSubmitHomePage.java
+ com.demo.guru99.userInterfaces.ButtonSubmitHomePage
+com/demo/guru99/tasks/ClickButtonSubmit.java
+ com.demo.guru99.tasks.ClickButtonSubmit
+com/demo/guru99/tasks/ClickRegisterLink.java
+ com.demo.guru99.tasks.ClickRegisterLink
+com/demo/guru99/models/Data.java
+ com.demo.guru99.models.Data
+com/demo/guru99/userInterfaces/SuccessfulRegistrationHomePage.java
+ com.demo.guru99.userInterfaces.SuccessfulRegistrationHomePage
+com/demo/guru99/tasks/SuccessfulRegistration.java
+ com.demo.guru99.tasks.SuccessfulRegistration
